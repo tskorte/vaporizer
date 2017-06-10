@@ -1,5 +1,4 @@
 import Vapor
-import Foundation
 extension Droplet {
     func setupRoutes() throws {
         get("hello") { req in
@@ -21,7 +20,7 @@ extension Droplet {
         get("description") { req in return req.description }
         
         post("gitpush"){ req in
-            NSLog("%@", "Got gitpush \(req.description)")
+            print("git push")
             return req.description
         }
         
