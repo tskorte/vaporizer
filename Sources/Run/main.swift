@@ -1,5 +1,5 @@
 import App
-import MongoProvider
+import Fluent
 /// We have isolated all of our App's logic into
 /// the App module because it makes our app
 /// more testable.
@@ -20,7 +20,6 @@ let config = try Config()
 try config.setup()
 
 let drop = try Droplet(config)
-try drop.provi
 try drop.setup()
 
 try drop.run()

@@ -13,10 +13,20 @@ final class User: Model {
         userName = try row.get("userName")
     }
     
+    init(node: Node) throws {
+        userName = try node.get("userName")
+    }
+    
     func makeRow() throws -> Row {
         var row = Row()
         try row.set("userName", userName)
         return row
+    }
+    
+    func makeNode(context: Context) throws -> Node {
+        return try Node(node: [
+            "userName" : userName
+        ])
     }
 }
 extension User: ResponseRepresentable {
@@ -42,7 +52,7 @@ final class AuthController : ResourceRepresentable{
     
     func index(req: Request) throws -> ResponseRepresentable{
         if let user = user {
-            return try user.makeJSON().makeResponse()
+            return try User.all().makeNode(in: nil).converted(to: JSON.self)
         }
         throw Abort.badRequest
     }
