@@ -20,7 +20,7 @@ extension Droplet {
         get("description") { req in return req.description }
         
         post("gitpush"){ req in
-            print("git push")
+            print("git push @ \(Date())")
             return req.description
         }
         
