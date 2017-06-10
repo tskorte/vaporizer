@@ -5755,6 +5755,7 @@
 				CB62ACE91EEC00C800B629E0 /* ShellHelper.swift */,
 			);
 			name = Helpers;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		OBJ_104 /* Relations */ = {
@@ -7609,7 +7610,6 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				CB62ACE81EEC00B700B629E0 /* Helpers */,
 				OBJ_8 /* App */,
 				OBJ_18 /* Run */,
 			);
@@ -7737,6 +7737,7 @@
 		OBJ_8 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				CB62ACE81EEC00B700B629E0 /* Helpers */,
 				OBJ_9 /* Config+Setup.swift */,
 				OBJ_10 /* Droplet+Setup.swift */,
 				OBJ_11 /* Routes.swift */,

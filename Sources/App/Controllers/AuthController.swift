@@ -7,10 +7,7 @@ final class AuthController : ResourceRepresentable{
     var user: User?
     
     func index(req: Request) throws -> ResponseRepresentable{
-        if let user = user {
-            return try User.all().makeNode(in: nil).converted(to: JSON.self)
-        }
-        throw Abort.badRequest
+        return try User.all().makeNode(in: nil).converted(to: JSON.self)
     }
     
     func create(req: Request) throws -> ResponseRepresentable{
