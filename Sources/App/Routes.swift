@@ -20,11 +20,14 @@ extension Droplet {
         get("description") { req in return req.description }
         
         post("gitpush"){ req in
-            print("git push @ \(Date())")
-            return req.description
+            ShellHelper.shell(launchPath: "sh ~/deployScript.sh",
+                                arguments: ["-p"])
+            return "OK"
         }
         
         try resource("posts", PostController.self)
         try resource("auth", AuthController.self)
     }
+    
+    
 }

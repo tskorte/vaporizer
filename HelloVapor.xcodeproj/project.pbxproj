@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB62ACEA1EEC00C800B629E0 /* ShellHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB62ACE91EEC00C800B629E0 /* ShellHelper.swift */; };
+		CB62ACED1EEC028D00B629E0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB62ACEB1EEC01F600B629E0 /* User.swift */; };
 		OBJ_1003 /* http_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_471 /* http_parser.c */; };
 		OBJ_1005 /* Bits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_741 /* Bits.framework */; };
 		OBJ_1006 /* Debugging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_742 /* Debugging.framework */; };
@@ -4401,6 +4403,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB62ACE91EEC00C800B629E0 /* ShellHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShellHelper.swift; path = Helpers/ShellHelper.swift; sourceTree = "<group>"; };
+		CB62ACEB1EEC01F600B629E0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Droplet+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Droplet+Setup.swift"; sourceTree = "<group>"; };
 		OBJ_100 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		OBJ_101 /* Query+Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Query+Filter.swift"; sourceTree = "<group>"; };
@@ -5745,6 +5749,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB62ACE81EEC00B700B629E0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB62ACE91EEC00C800B629E0 /* ShellHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		OBJ_104 /* Relations */ = {
 			isa = PBXGroup;
 			children = (
@@ -5911,6 +5923,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_17 /* Post.swift */,
+				CB62ACEB1EEC01F600B629E0 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -7596,6 +7609,7 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				CB62ACE81EEC00B700B629E0 /* Helpers */,
 				OBJ_8 /* App */,
 				OBJ_18 /* Run */,
 			);
@@ -9546,6 +9560,7 @@
 				OBJ_2285 /* Droplet+Setup.swift in Sources */,
 				OBJ_2286 /* Routes.swift in Sources */,
 				OBJ_2287 /* AuthController.swift in Sources */,
+				CB62ACED1EEC028D00B629E0 /* User.swift in Sources */,
 				OBJ_2288 /* BuildController.swift in Sources */,
 				OBJ_2289 /* PostController.swift in Sources */,
 				OBJ_2290 /* Post.swift in Sources */,
@@ -9586,6 +9601,7 @@
 				OBJ_792 /* Bytes+Hex.swift in Sources */,
 				OBJ_793 /* Bytes+Percent.swift in Sources */,
 				OBJ_794 /* BytesConvertible.swift in Sources */,
+				CB62ACEA1EEC00C800B629E0 /* ShellHelper.swift in Sources */,
 				OBJ_795 /* ByteSequence+Conversions.swift in Sources */,
 				OBJ_796 /* Data+BytesConvertible.swift in Sources */,
 				OBJ_797 /* HexEncoder.swift in Sources */,
