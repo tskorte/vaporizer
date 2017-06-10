@@ -7,20 +7,12 @@
 //
 
 import Foundation
-
+import SwiftShell
 public struct ShellHelper {
-    public static func shell(launchPath: String, arguments: [String] = []) -> (String? , Int32) {
-        let task = Process()
-        task.launchPath = launchPath
-        task.arguments = arguments
-        
-        let pipe = Pipe()
-        task.standardOutput = pipe
-        task.standardError = pipe
-        task.launch()
-        let data = pipe.fileHandleForReading.readDataToEndOfFile()
-        let output = String(data: data, encoding: .utf8)
-        task.waitUntilExit()
-        return (output, task.terminationStatus)
+    public static func shell(launchPath: String, arguments: [String] = []){
+        let command = runAsync("sh /home/vaporizer/deployScript.sh", ["-p"]).onCompletion{ command in
+            print("Command finished")
+        }
+        try! command.finish()
     }
 }

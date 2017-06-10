@@ -2,8 +2,8 @@ import Vapor
 extension Droplet {
     func setupRoutes() throws {
         post("gitpush"){ req in
-            ShellHelper.shell(launchPath: "sh ~/deployScript.sh",
-                                arguments: ["-p"])
+            ShellHelper.shell(launchPath: "echo launching",
+                                arguments: [""])
             return "OK"
         }
         
