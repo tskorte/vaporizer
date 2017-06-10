@@ -1,5 +1,4 @@
 import App
-import Fluent
 /// We have isolated all of our App's logic into
 /// the App module because it makes our app
 /// more testable.
