@@ -20,7 +20,10 @@ extension Droplet {
 
         get("description") { req in return req.description }
         
-        
+        post("/gitpush"){ req in
+            NSLog("Got git push")
+            return req.description
+        }
         
         try resource("posts", PostController.self)
         try resource("auth", AuthController.self)

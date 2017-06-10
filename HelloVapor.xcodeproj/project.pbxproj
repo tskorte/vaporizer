@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB62AB081EEBFA0500B629E0 /* BuildController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB62AB071EEBFA0500B629E0 /* BuildController.swift */; };
 		OBJ_1010 /* Response+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_395 /* Response+Async.swift */; };
 		OBJ_1011 /* Body+Bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_397 /* Body+Bytes.swift */; };
 		OBJ_1012 /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_398 /* Body.swift */; };
@@ -3657,6 +3658,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB62AB071EEBFA0500B629E0 /* BuildController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildController.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Droplet+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Droplet+Setup.swift"; sourceTree = "<group>"; };
 		OBJ_100 /* File+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File+Response.swift"; sourceTree = "<group>"; };
 		OBJ_101 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
@@ -4822,6 +4824,7 @@
 			children = (
 				OBJ_13 /* AuthController.swift */,
 				OBJ_14 /* PostController.swift */,
+				CB62AB071EEBFA0500B629E0 /* BuildController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -6025,7 +6028,7 @@
 			path = Socket;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -6036,7 +6039,6 @@
 				OBJ_26 /* Dependencies */,
 				OBJ_609 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_508 /* TCP */ = {
@@ -7410,7 +7412,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_609 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -7915,6 +7917,7 @@
 				OBJ_652 /* Byte+PatternMatching.swift in Sources */,
 				OBJ_653 /* Byte+Random.swift in Sources */,
 				OBJ_654 /* Byte+UTF8Numbers.swift in Sources */,
+				CB62AB081EEBFA0500B629E0 /* BuildController.swift in Sources */,
 				OBJ_655 /* Bytes+Base64.swift in Sources */,
 				OBJ_656 /* Bytes+Hex.swift in Sources */,
 				OBJ_657 /* Bytes+Percent.swift in Sources */,
