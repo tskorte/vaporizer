@@ -3,6 +3,7 @@ import AuthProvider
 extension Droplet {
     func setupRoutes() throws {
         setupUserRoutes()
+        
         post("gitpush"){ req in
             return "OK"
         }
@@ -45,6 +46,8 @@ extension Droplet {
             try token.save()
             return token
         }
+        try setupUnauthenticatedRoutes()
+        
     }
     
     func setupUserRoutes(){
