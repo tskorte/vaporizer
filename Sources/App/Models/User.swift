@@ -10,36 +10,32 @@ import Foundation
 import FluentProvider
 import AuthProvider
 
+private var _userPasswordVerifier: PasswordVerifier? = nil
+
 public final class User: Model {
     public let storage = Storage()
     public let userName: String
-    public let userId: Identifier
-    init(userName: String, userId: Identifier){
-        self.userId = userId
-        self.userName = userName
-    }
+    public let email: String
+    public var password: String?
     
+    init(name: String, email: String, password: String? = nil) {
+        self.userName = name
+        self.email = email
+        self.password = password
+    }
+
     required public init(row: Row) throws {
-        userName = try row.get("userName")
-        userId = try row.get("userId")
-    }
-    
-    init(node: Node) throws {
-        userName = try node.get("userName")
-        userId = try node.get("userId")
+        userName = try row.get("name")
+        email = try row.get("email")
+        password = try row.get("password")
     }
     
     public func makeRow() throws -> Row {
         var row = Row()
-        try row.set("userName", userName)
-        try row.set("userId", userId)
+        try row.set("name", userName)
+        try row.set("email", email)
+        try row.set("password", password)
         return row
-    }
-    
-    func makeNode(context: Context) throws -> Node {
-        return try Node(node: [
-            "userName" : userName
-            ])
     }
 }
 
@@ -54,29 +50,43 @@ extension User: TokenAuthenticatable{
 extension User: JSONConvertible {
     convenience public init(json: JSON) throws {
         try self.init(
-            userName: json.get("userName"),
-            userId: json.get("userId")
+            name: json.get("name"),
+            email: json.get("email")
         )
+        id = try json.get("id")
     }
     
     public func makeJSON() throws -> JSON {
-        var json = JSON()
-        try json.set("userName", userName)
-        try json.set("userId", userId)
+        var json = JSON()   
+        try json.set("id", id)
+        try json.set("name", userName)
+        try json.set("email", email)
         return json
     }
 }
 
 extension User: Preparation{
     public static func prepare(_ database: Database) throws {
-        try database.create(self){ users in
-            users.id()
-            users.string("userName")
-            users.int("userId")
+        try database.create(self) { builder in
+            builder.id()
+            builder.string("name")
+            builder.string("email")
+            builder.string("password")
         }
     }
     
     public static func revert(_ database: Database) throws {
         try database.delete(self)
+    }
+}
+
+extension User: PasswordAuthenticatable {
+    public var hashedPassword: String? {
+        return password
+    }
+    
+    public static var passwordVerifier: PasswordVerifier? {
+        get { return _userPasswordVerifier }
+        set { _userPasswordVerifier = newValue }
     }
 }

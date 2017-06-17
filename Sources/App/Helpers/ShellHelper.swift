@@ -8,6 +8,9 @@
 
 import Foundation
 import SwiftShell
+
+
+
 public struct ShellHelper {
     public static func shell(launchPath: String, arguments: [String] = []){
         let command = runAsync("sh /home/vaporizer/deployScript.sh", ["-p"]).onCompletion{ command in

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_827"
+               BlueprintIdentifier = "OBJ_829"
                BuildableName = "Bits.framework"
                BlueprintName = "Bits"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_852"
+               BlueprintIdentifier = "OBJ_854"
                BuildableName = "Debugging.framework"
                BlueprintName = "Debugging"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -42,7 +42,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_859"
+               BlueprintIdentifier = "OBJ_861"
                BuildableName = "libc.framework"
                BlueprintName = "libc"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -56,7 +56,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_870"
+               BlueprintIdentifier = "OBJ_872"
                BuildableName = "Core.framework"
                BlueprintName = "Core"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -70,7 +70,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_905"
+               BlueprintIdentifier = "OBJ_907"
                BuildableName = "Random.framework"
                BlueprintName = "Random"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -84,7 +84,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_925"
+               BlueprintIdentifier = "OBJ_927"
                BuildableName = "Crypto.framework"
                BlueprintName = "Crypto"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -98,7 +98,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_954"
+               BlueprintIdentifier = "OBJ_956"
                BuildableName = "Sockets.framework"
                BlueprintName = "Sockets"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -112,7 +112,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_992"
+               BlueprintIdentifier = "OBJ_994"
                BuildableName = "Transport.framework"
                BlueprintName = "Transport"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -126,7 +126,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1016"
+               BlueprintIdentifier = "OBJ_1018"
                BuildableName = "TLS.framework"
                BlueprintName = "TLS"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -140,7 +140,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1046"
+               BlueprintIdentifier = "OBJ_1048"
                BuildableName = "CHTTP.framework"
                BlueprintName = "CHTTP"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -154,7 +154,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1072"
+               BlueprintIdentifier = "OBJ_1074"
                BuildableName = "Cookies.framework"
                BlueprintName = "Cookies"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -168,7 +168,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1115"
+               BlueprintIdentifier = "OBJ_1117"
                BuildableName = "SMTP.framework"
                BlueprintName = "SMTP"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -182,7 +182,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1112"
+               BlueprintIdentifier = "OBJ_1114"
                BuildableName = "URI.framework"
                BlueprintName = "URI"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -196,7 +196,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1114"
+               BlueprintIdentifier = "OBJ_1116"
                BuildableName = "HTTP.framework"
                BlueprintName = "HTTP"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -210,7 +210,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1260"
+               BlueprintIdentifier = "OBJ_1262"
                BuildableName = "WebSockets.framework"
                BlueprintName = "WebSockets"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -224,7 +224,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1304"
+               BlueprintIdentifier = "OBJ_1306"
                BuildableName = "Console.framework"
                BlueprintName = "Console"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -238,7 +238,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1353"
+               BlueprintIdentifier = "OBJ_1355"
                BuildableName = "Node.framework"
                BlueprintName = "Node"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -252,7 +252,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1407"
+               BlueprintIdentifier = "OBJ_1409"
                BuildableName = "PathIndexable.framework"
                BlueprintName = "PathIndexable"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -266,7 +266,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1423"
+               BlueprintIdentifier = "OBJ_1425"
                BuildableName = "JSON.framework"
                BlueprintName = "JSON"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -280,7 +280,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1450"
+               BlueprintIdentifier = "OBJ_1452"
                BuildableName = "Branches.framework"
                BlueprintName = "Branches"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -294,7 +294,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1493"
+               BlueprintIdentifier = "OBJ_1495"
                BuildableName = "Routing.framework"
                BlueprintName = "Routing"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -308,7 +308,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1545"
+               BlueprintIdentifier = "OBJ_1547"
                BuildableName = "Multipart.framework"
                BlueprintName = "Multipart"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -322,7 +322,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1587"
+               BlueprintIdentifier = "OBJ_1589"
                BuildableName = "FormData.framework"
                BlueprintName = "FormData"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -336,7 +336,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1629"
+               BlueprintIdentifier = "OBJ_1631"
                BuildableName = "BCrypt.framework"
                BlueprintName = "BCrypt"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -350,7 +350,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1654"
+               BlueprintIdentifier = "OBJ_1656"
                BuildableName = "Testing.framework"
                BlueprintName = "Testing"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -364,7 +364,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1721"
+               BlueprintIdentifier = "OBJ_1723"
                BuildableName = "Sessions.framework"
                BlueprintName = "Sessions"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -378,7 +378,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1725"
+               BlueprintIdentifier = "OBJ_1727"
                BuildableName = "Vapor.framework"
                BlueprintName = "Vapor"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -392,7 +392,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1723"
+               BlueprintIdentifier = "OBJ_1725"
                BuildableName = "Configs.framework"
                BlueprintName = "Configs"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -406,7 +406,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1719"
+               BlueprintIdentifier = "OBJ_1721"
                BuildableName = "Cache.framework"
                BlueprintName = "Cache"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -420,7 +420,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2064"
+               BlueprintIdentifier = "OBJ_2066"
                BuildableName = "CSQLite.framework"
                BlueprintName = "CSQLite"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -434,7 +434,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2084"
+               BlueprintIdentifier = "OBJ_2086"
                BuildableName = "SQLite.framework"
                BlueprintName = "SQLite"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -448,7 +448,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2107"
+               BlueprintIdentifier = "OBJ_2109"
                BuildableName = "Fluent.framework"
                BlueprintName = "Fluent"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -462,7 +462,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2195"
+               BlueprintIdentifier = "OBJ_2197"
                BuildableName = "FluentTester.framework"
                BlueprintName = "FluentTester"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -476,7 +476,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2237"
+               BlueprintIdentifier = "OBJ_2239"
                BuildableName = "FluentProvider.framework"
                BlueprintName = "FluentProvider"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -490,7 +490,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2328"
+               BlueprintIdentifier = "OBJ_2330"
                BuildableName = "SwiftShell.framework"
                BlueprintName = "SwiftShell"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -504,7 +504,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2343"
+               BlueprintIdentifier = "OBJ_2345"
                BuildableName = "Authentication.framework"
                BlueprintName = "Authentication"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -518,7 +518,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2381"
+               BlueprintIdentifier = "OBJ_2383"
                BuildableName = "Authorization.framework"
                BlueprintName = "Authorization"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -532,7 +532,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2414"
+               BlueprintIdentifier = "OBJ_2416"
                BuildableName = "AuthProvider.framework"
                BlueprintName = "AuthProvider"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -546,7 +546,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2498"
+               BlueprintIdentifier = "OBJ_2500"
                BuildableName = "App.framework"
                BlueprintName = "App"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -560,7 +560,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2589"
+               BlueprintIdentifier = "OBJ_2593"
                BuildableName = "Run"
                BlueprintName = "Run"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -578,7 +578,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2674"
+               BlueprintIdentifier = "OBJ_2678"
                BuildableName = "AppTests.xctest"
                BlueprintName = "AppTests"
                ReferencedContainer = "container:HelloVapor.xcodeproj">
@@ -601,7 +601,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_827"
+            BlueprintIdentifier = "OBJ_829"
             BuildableName = "Bits.framework"
             BlueprintName = "Bits"
             ReferencedContainer = "container:HelloVapor.xcodeproj">

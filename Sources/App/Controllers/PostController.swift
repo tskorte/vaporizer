@@ -1,5 +1,6 @@
 import Vapor
 import HTTP
+import AuthProvider
 
 /// Here we have a controller that helps facilitate
 /// RESTful interactions with our Posts table
@@ -7,6 +8,8 @@ final class PostController: ResourceRepresentable {
     /// When users call 'GET' on '/posts'
     /// it should return an index of all available posts
     func index(req: Request) throws -> ResponseRepresentable {
+        let user = try req.user()
+        
         return try Post.all().makeJSON()
     }
 

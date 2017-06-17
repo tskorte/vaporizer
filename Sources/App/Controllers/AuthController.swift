@@ -9,16 +9,11 @@ final class AuthController : ResourceRepresentable{
         return try User.all().makeNode(in: nil).converted(to: JSON.self)
     }
     
-    func create(req: Request) throws -> ResponseRepresentable{
-        let user = try req.user()
-        try user.save()
-        return user
-    }
     
     func makeResource() -> Resource<User> {
         return Resource(index: index,
-                        create: create,
-                        store: create,
+                        create: nil,
+                        store: nil,
                         show: nil,
                         edit: nil)
     }
