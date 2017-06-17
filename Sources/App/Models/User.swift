@@ -8,25 +8,31 @@
 import Vapor
 import Foundation
 import FluentProvider
+import AuthProvider
 
-final class User: Model {
-    let storage = Storage()
-    let userName: String
-    init(userName: String){
+public final class User: Model {
+    public let storage = Storage()
+    public let userName: String
+    public let userId: Identifier
+    init(userName: String, userId: Identifier){
+        self.userId = userId
         self.userName = userName
     }
     
-    required init(row: Row) throws {
+    required public init(row: Row) throws {
         userName = try row.get("userName")
+        userId = try row.get("userId")
     }
     
     init(node: Node) throws {
         userName = try node.get("userName")
+        userId = try node.get("userId")
     }
     
-    func makeRow() throws -> Row {
+    public func makeRow() throws -> Row {
         var row = Row()
         try row.set("userName", userName)
+        try row.set("userId", userId)
         return row
     }
     
@@ -36,19 +42,41 @@ final class User: Model {
             ])
     }
 }
+
+
 extension User: ResponseRepresentable {
 }
 
+extension User: TokenAuthenticatable{
+    public typealias TokenType = Token
+}
+
 extension User: JSONConvertible {
-    convenience init(json: JSON) throws {
+    convenience public init(json: JSON) throws {
         try self.init(
-            userName: json.get("userName")
+            userName: json.get("userName"),
+            userId: json.get("userId")
         )
     }
     
-    func makeJSON() throws -> JSON {
+    public func makeJSON() throws -> JSON {
         var json = JSON()
         try json.set("userName", userName)
+        try json.set("userId", userId)
         return json
+    }
+}
+
+extension User: Preparation{
+    public static func prepare(_ database: Database) throws {
+        try database.create(self){ users in
+            users.id()
+            users.string("userName")
+            users.int("userId")
+        }
+    }
+    
+    public static func revert(_ database: Database) throws {
+        try database.delete(self)
     }
 }

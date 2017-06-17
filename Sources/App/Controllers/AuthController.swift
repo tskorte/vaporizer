@@ -1,10 +1,9 @@
 import Vapor
 import HTTP
 import FluentProvider
-
+import AuthProvider
 
 final class AuthController : ResourceRepresentable{
-    var user: User?
     
     func index(req: Request) throws -> ResponseRepresentable{
         return try User.all().makeNode(in: nil).converted(to: JSON.self)
@@ -12,7 +11,6 @@ final class AuthController : ResourceRepresentable{
     
     func create(req: Request) throws -> ResponseRepresentable{
         let user = try req.user()
-        self.user = user
         try user.save()
         return user
     }
@@ -29,7 +27,6 @@ final class AuthController : ResourceRepresentable{
 extension AuthController: EmptyInitializable{}
 extension Request {
     func user() throws -> User {
-        guard let json = json else { throw Abort.badRequest }
-        return try User(json: json)
+        return try auth.assertAuthenticated()
     }
 }
