@@ -56,6 +56,12 @@ extension Droplet {
     }
     
     private func setupUnauthenticatedRoutes() throws {
+        
+        get("test"){
+            req in
+            return "ok"
+        }
+        
         // a simple json example response
         
         get("users") { req in
