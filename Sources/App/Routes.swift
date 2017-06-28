@@ -2,6 +2,7 @@ import Vapor
 import AuthProvider
 extension Droplet {
     func setupRoutes() throws {
+	print("Testing git push hook")
         setupUserRoutes()
         
         post("gitpush"){ req in
