@@ -3,6 +3,7 @@ import AuthProvider
 extension Droplet {
     func setupRoutes() throws {
         setupUserRoutes()
+        
         post("gitpush"){ req in
             return "OK"
         }
@@ -38,6 +39,8 @@ extension Droplet {
         guard try User.makeQuery().filter("email", user.email).first() == nil else {
             throw Abort(.badRequest, reason: "A user with that email already exists.")
         }
+        try setupUnauthenticatedRoutes()
+        
     }
     
     func setupUserRoutes(){
@@ -49,6 +52,12 @@ extension Droplet {
     }
     
     private func setupUnauthenticatedRoutes() throws {
+        
+        get("test"){
+            req in
+            return "ok"
+        }
+        
         // a simple json example response
         
         get("users") { req in
