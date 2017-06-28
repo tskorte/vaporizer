@@ -10,19 +10,12 @@ extension Droplet {
         try resource("posts", PostController.self)
         let secretGroup = grouped(ClientSecretMiddleWare())
         secretGroup.post("user") { req in
-            // require that the request body be json
             guard let json = req.json else {
                 throw Abort(.badRequest)
             }
             
-            // initialize the name and email from
-            // the request json
             let user = try User(json: json)
-            
-            // ensure no user with this email already exists
-            guard try User.makeQuery().filter("email", user.email).first() == nil else {
-                throw Abort(.badRequest, reason: "A user with that email already exists.")
-            }
+            try self.checkIfUserExists(user: user)
             
             // require a plaintext password is supplied
             guard let password = json["password"]?.string else {
@@ -36,14 +29,14 @@ extension Droplet {
             try user.save()
             return user
         }
-        
+        let authController = AuthController()
         let passwordGroup = grouped([PasswordAuthenticationMiddleware(User.self)])
-        
-        passwordGroup.post("login"){ request in
-            let user = try request.user()
-            let token = try Token.generate(for: user)
-            try token.save()
-            return token
+        passwordGroup.post("login", handler: authController.authenticate)
+    }
+    
+    func checkIfUserExists(user: User) throws{
+        guard try User.makeQuery().filter("email", user.email).first() == nil else {
+            throw Abort(.badRequest, reason: "A user with that email already exists.")
         }
     }
     

@@ -14,7 +14,7 @@ let MySecret = "øløløløl"
 
 public final class ClientSecretMiddleWare: Middleware{
     public func respond(to request: Request, chainingTo next: Responder) throws -> Response {
-        let clientSecret = try request.clientSecret()
+        try request.clientSecret()
         return try next.respond(to: request)
     }
 }

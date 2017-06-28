@@ -1,3 +1,9 @@
+//
+//  AuthController.swift
+//  App
+//
+//  Created by Karl Kristian Forfang on 23.06.2017.
+//
 import Vapor
 import HTTP
 import FluentProvider
@@ -9,13 +15,15 @@ final class AuthController : ResourceRepresentable{
         return try User.all().makeNode(in: nil).converted(to: JSON.self)
     }
     
+    func authenticate(_ req: Request) throws -> ResponseRepresentable{
+        let user = try req.user()
+        let token = try Token.generate(for: user)
+        try token.save()
+        return token
+    }
     
     func makeResource() -> Resource<User> {
-        return Resource(index: index,
-                        create: nil,
-                        store: nil,
-                        show: nil,
-                        edit: nil)
+        return Resource(index: index)
     }
 }
 
@@ -25,3 +33,4 @@ extension Request {
         return try auth.assertAuthenticated()
     }
 }
+

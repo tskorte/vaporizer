@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB25B2EA1EFDC3B90071AA5F /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB25B2E81EFDC39E0071AA5F /* AuthController.swift */; };
+		CB25B2EE1EFDC7080071AA5F /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB25B2EC1EFDC6C40071AA5F /* UserController.swift */; };
+		CB25B2F01EFEFF110071AA5F /* PasswordHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB25B2EF1EFEFF110071AA5F /* PasswordHelper.swift */; };
 		CBF6347A1EF5C7230070FA25 /* ClientSecretMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF634781EF5C6FE0070FA25 /* ClientSecretMiddleware.swift */; };
 		OBJ_1000 /* ClientStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_697 /* ClientStream.swift */; };
 		OBJ_1001 /* InternetStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_698 /* InternetStream.swift */; };
@@ -914,10 +917,8 @@
 		OBJ_2505 /* Config+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Config+Setup.swift */; };
 		OBJ_2506 /* Droplet+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Droplet+Setup.swift */; };
 		OBJ_2507 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Routes.swift */; };
-		OBJ_2508 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* AuthController.swift */; };
 		OBJ_2509 /* BuildController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* BuildController.swift */; };
 		OBJ_2510 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* PostController.swift */; };
-		OBJ_2511 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* UserController.swift */; };
 		OBJ_2512 /* ShellHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* ShellHelper.swift */; };
 		OBJ_2513 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Post.swift */; };
 		OBJ_2514 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Token.swift */; };
@@ -4996,6 +4997,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB25B2E81EFDC39E0071AA5F /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		CB25B2EC1EFDC6C40071AA5F /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserController.swift; path = "Sources/App/New Group/UserController.swift"; sourceTree = SOURCE_ROOT; };
+		CB25B2EF1EFEFF110071AA5F /* PasswordHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordHelper.swift; sourceTree = "<group>"; };
 		CBF634781EF5C6FE0070FA25 /* ClientSecretMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientSecretMiddleware.swift; path = Middleware/ClientSecretMiddleware.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Droplet+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Droplet+Setup.swift"; sourceTree = "<group>"; };
 		OBJ_102 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
@@ -5023,7 +5027,6 @@
 		OBJ_127 /* Database+Preparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Preparation.swift"; sourceTree = "<group>"; };
 		OBJ_128 /* Migration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Migration.swift; sourceTree = "<group>"; };
 		OBJ_129 /* Preparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preparation.swift; sourceTree = "<group>"; };
-		OBJ_13 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
 		OBJ_130 /* PreparationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationError.swift; sourceTree = "<group>"; };
 		OBJ_132 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		OBJ_133 /* Aggregate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aggregate.swift; sourceTree = "<group>"; };
@@ -5052,7 +5055,6 @@
 		OBJ_157 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		OBJ_158 /* RowContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowContext.swift; sourceTree = "<group>"; };
 		OBJ_159 /* RowConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowConvertible.swift; sourceTree = "<group>"; };
-		OBJ_16 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		OBJ_161 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		OBJ_162 /* Creator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creator.swift; sourceTree = "<group>"; };
 		OBJ_163 /* Database+Schema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Schema.swift"; sourceTree = "<group>"; };
@@ -6477,6 +6479,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB25B2E71EFDC3630071AA5F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				CB25B2E81EFDC39E0071AA5F /* AuthController.swift */,
+			);
+			name = Authentication;
+			path = Sources/App/Authentication;
+			sourceTree = SOURCE_ROOT;
+		};
+		CB25B2EB1EFDC6A80071AA5F /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				CB25B2EC1EFDC6C40071AA5F /* UserController.swift */,
+			);
+			name = Users;
+			path = Sources/App/Users;
+			sourceTree = SOURCE_ROOT;
+		};
 		CBF634771EF5C6ED0070FA25 /* Middleware */ = {
 			isa = PBXGroup;
 			children = (
@@ -6546,10 +6566,8 @@
 		OBJ_12 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_13 /* AuthController.swift */,
 				OBJ_14 /* BuildController.swift */,
 				OBJ_15 /* PostController.swift */,
-				OBJ_16 /* UserController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -6658,6 +6676,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_18 /* ShellHelper.swift */,
+				CB25B2EF1EFEFF110071AA5F /* PasswordHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -8599,6 +8618,8 @@
 		OBJ_8 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				CB25B2EB1EFDC6A80071AA5F /* Users */,
+				CB25B2E71EFDC3630071AA5F /* Authentication */,
 				CBF634771EF5C6ED0070FA25 /* Middleware */,
 				OBJ_9 /* Config+Setup.swift */,
 				OBJ_10 /* Droplet+Setup.swift */,
@@ -10646,10 +10667,10 @@
 				OBJ_2505 /* Config+Setup.swift in Sources */,
 				OBJ_2506 /* Droplet+Setup.swift in Sources */,
 				OBJ_2507 /* Routes.swift in Sources */,
-				OBJ_2508 /* AuthController.swift in Sources */,
+				CB25B2EA1EFDC3B90071AA5F /* AuthController.swift in Sources */,
 				OBJ_2509 /* BuildController.swift in Sources */,
+				CB25B2EE1EFDC7080071AA5F /* UserController.swift in Sources */,
 				OBJ_2510 /* PostController.swift in Sources */,
-				OBJ_2511 /* UserController.swift in Sources */,
 				OBJ_2512 /* ShellHelper.swift in Sources */,
 				OBJ_2513 /* Post.swift in Sources */,
 				OBJ_2514 /* Token.swift in Sources */,
@@ -10686,6 +10707,7 @@
 				OBJ_837 /* Byte+ControlCharacters.swift in Sources */,
 				OBJ_838 /* Byte+Convenience.swift in Sources */,
 				OBJ_839 /* Byte+PatternMatching.swift in Sources */,
+				CB25B2F01EFEFF110071AA5F /* PasswordHelper.swift in Sources */,
 				OBJ_840 /* Byte+Random.swift in Sources */,
 				OBJ_841 /* Byte+UTF8Numbers.swift in Sources */,
 				OBJ_842 /* Bytes+Base64.swift in Sources */,

@@ -18,4 +18,18 @@ public struct ShellHelper {
         }
         try! command.finish()
     }
+    
+    static func deploy(){
+        let process = Process()
+        process.launchPath = "/usr/bin/env"
+        process.arguments = ["mkdir buildVaporizer"]
+        process.launch()
+    }
+    
+    static func build(){
+        let process = Process()
+        process.launchPath = "/usr/bin/env"
+        process.arguments = ["cd /home/"]
+        process.launch()
+    }
 }
